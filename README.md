@@ -4,7 +4,10 @@
 [Debug-FreeRTOS 1](https://www.freertos.org/zh-cn-cmn-s/Documentation/02-Kernel/03-Supported-devices/04-Demos/03-Emulation-and-simulation/QEMU/Install-and-start-QEMU-emulator)
 [Debug-FreeRTOS 2](https://www.freertos.org/zh-cn-cmn-s/Documentation/02-Kernel/03-Supported-devices/04-Demos/03-Emulation-and-simulation/QEMU/freertos-on-qemu-mps2-an385-model)
 
-## QEMU MPS2模拟FreeRTOS
-在linux下，需要安装 ```arm-none-eabi-gcc --version```, ```arm-none-eabi-gdb --version```,和 ```make --version```.
-1. 进入目录 ```/FreeRTOS/FreeRTOS/Demo/CORTEX_MPS2_QEMU_IAR_GCC/build/gcc```
-2. 执行 make
+
+# 编译固件
+执行``` qemu.sh```,生成调试文件 ```FreeRTOS/FreeRTOS/Demo/CORTEX_MPS2_QEMU_IAR_GCC/build/gcc/output/RTOSDemo.out```
+
+# 调试
+点击 VsCode 的调试按钮，停止到Reset_Handler函数。然后就可以愉快的进行调试了。
+![alt text](Debug开始.png)

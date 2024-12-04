@@ -1,0 +1,19 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "qemu debug",
+      "type": "shell",
+      "command": "qemu-system-arm",
+      "args": [
+        "-M", "versatilepb",
+        "-kernel", "${workspaceRoot}/FreeRTOS/FreeRTOS/Demo/CORTEX_MPS2_QEMU_IAR_GCC/build/gcc/output/RTOSDemo.out",
+        "-S",
+        "-gdb", "tcp::1234",
+        "-nographic"
+      ],
+      "problemMatcher": [],
+      "isBackground": true
+    }
+  ]
+}

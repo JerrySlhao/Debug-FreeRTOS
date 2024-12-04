@@ -1,0 +1,1 @@
+qemu-system-arm -machine mps2-an385 -cpu cortex-m3 -kernel FreeRTOS/FreeRTOS/Demo/CORTEX_MPS2_QEMU_IAR_GCC/build/gcc/output/RTOSDemo.out -serial mon:stdio -nographic -S -s
